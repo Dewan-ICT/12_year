@@ -7,3 +7,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+.font-sb {
+  font-family: "bangla";
+}
+@font-face {
+  font-family: "bangla";
+  src: url("/bn.ttf");
+  font-weight: normal;
+  font-style: normal;
+}

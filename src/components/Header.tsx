@@ -15,16 +15,20 @@ const Header = () => {
     <div className="w-full relative ">
       <Confetti numberOfPieces={number} width={width - 5} height={height} />
       <div className="w-full relative flex justify-between items-center px-3 md:max-w-7xl mx-auto">
-        <img
-          src="12.png"
-          className="h-20 md:h-32"
-          alt="dewan ict 12 year logo"
-        />
-        <img
-          src="logo.png"
-          className="h-10 md:h-15 xl:h-20"
-          alt="dewan ict 12 year logo"
-        />
+        <a href="/">
+          <img
+            src="12.png"
+            className="h-20 md:h-32"
+            alt="dewan ict 12 year logo"
+          />
+        </a>
+        <a href="https://dewanict.com/">
+          <img
+            src="logo.png"
+            className="h-10 md:h-15 xl:h-20"
+            alt="dewan ict 12 year logo"
+          />
+        </a>
       </div>
     </div>
   );

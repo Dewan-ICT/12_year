@@ -6,6 +6,7 @@ import AvatarEditor from "react-avatar-editor";
 import { Card, Flex, IconButton } from "@radix-ui/themes";
 import { FC, useRef, useState } from "react";
 import ImageUploading from "react-images-uploading";
+import { MajesticonsImagePhotographyLine } from "../views/Home";
 interface PropI {
   placeholder: string;
   onCrop: (file: any, preview: any) => void;
@@ -63,7 +64,7 @@ const ImgUploader: FC<PropI> = ({ placeholder, onCrop = () => {} }) => {
   };
   return (
     <div className="w-full relative">
-      <div className="h-full w-full border-2 relative rounded-4 hover:shadow-xl shadow-black dark:shadow-white/5 border-dashed bg-red-600 text-white font-bold">
+      <div className="h-full w-full border-2 relative rounded-4 hover:shadow-xl shadow-black dark:shadow-white/5 border-dashed bg-red-600 text-white ">
         <ImageUploading
           multiple
           value={images}
@@ -178,7 +179,10 @@ const ImgUploader: FC<PropI> = ({ placeholder, onCrop = () => {} }) => {
                   {...dragProps}
                   className="w-full  gap-[2px] cursor-pointer justify-center items-center flex-col"
                 >
-                  {placeholder}
+                  <div className="w-full h-44 flex justify-center items-center flex-col gap-5">
+                    <MajesticonsImagePhotographyLine className="text-7xl" />
+                    {placeholder}
+                  </div>
                 </Flex>
               )}
             </div>
