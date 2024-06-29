@@ -4,7 +4,7 @@ const Banner = () => {
       <p className="w-full relative text-xl md:text-3xl text-center grbg text-white px-4 py-5 overflow-hidden rounded-lg">
         দেওয়ান আইসিটি ইন্সটিটিউট এক যুগ ধরে ডিজিটাল বাংলাদেশ থেকে স্মার্ট
         বাংলাদেশ গড়ায় কাজ করে যাচ্ছে। এই এক যুগে যারা আমাদের সফলতার অংশীদার
-        তাদের জানাই আন্তরিক শুভেচ্ছে ও অভিনন্দন
+        তাদের জানাই আন্তরিক শুভেচ্ছা ও অভিনন্দন
       </p>
     </div>
   );
