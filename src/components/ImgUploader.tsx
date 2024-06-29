@@ -64,7 +64,7 @@ const ImgUploader: FC<PropI> = ({ placeholder, onCrop = () => {} }) => {
   };
   return (
     <div className="w-full relative">
-      <div className="h-full w-full border-2 relative rounded-4 hover:shadow-xl shadow-black dark:shadow-white/5 border-dashed bg-red-600 text-white ">
+      <div className="h-full w-full border-2 relative rounded-4 hover:shadow-xl shadow-black dark:shadow-white/5 border-dashed grbg text-white ">
         <ImageUploading
           multiple
           value={images}

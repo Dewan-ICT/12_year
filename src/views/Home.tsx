@@ -23,19 +23,20 @@ const Home = () => {
         };
         divRef.current.style.transform = `scale(${4})`;
         divRef.current.style.transformOrigin = "top left";
-
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        domtoimage.toBlob(divRef.current, options).then(function (blob: any) {
-          // Create a temporary anchor element to trigger the download
-          const link = document.createElement("a");
-          link.download = "image.png"; // Download as PNG, adjust as needed
-          link.href = URL.createObjectURL(blob);
-          if (divRef.current) {
-            divRef.current.style.transform = "";
-            divRef.current.style.transformOrigin = "";
-          }
-          link.click();
-        });
+        setTimeout(() => {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          domtoimage.toBlob(divRef.current, options).then(function (blob: any) {
+            // Create a temporary anchor element to trigger the download
+            const link = document.createElement("a");
+            link.download = "Dewan ICT Post.jpg"; // Download as PNG, adjust as needed
+            link.href = URL.createObjectURL(blob);
+            if (divRef.current) {
+              divRef.current.style.transform = "";
+              divRef.current.style.transformOrigin = "";
+            }
+            link.click();
+          });
+        }, 1000);
       } catch (error) {
         console.error("Error capturing div content:", error);
       }
@@ -88,7 +89,7 @@ const Home = () => {
                   onClick={() => {
                     handleDownload(divRef);
                   }}
-                  className="w-full rounded-md mt-5 text-white  bg-red-600 text-xl py-4 max-w-[350px]"
+                  className="w-full rounded-md mt-5 text-white  grbg text-xl py-4 max-w-[350px]"
                 >
                   ডাউনলোড করুন
                 </button>
@@ -96,7 +97,7 @@ const Home = () => {
             )}
           </div>
         </div>
-        <h1 className="text-2xl bg-red-600 text-white p-5  text-center rounded-md mt-10">
+        <h1 className="text-2xl grbg text-white p-5  text-center rounded-md mt-10">
           দেওয়ান আইসিটি ইন্সটিটিউটকে জানাতে পারেন আপনার শুভেচ্ছা-কথা
         </h1>
         <div className="w-full relative pt-10 flex flex-col md:flex-row justify-between gap-2">
@@ -125,7 +126,7 @@ const Home = () => {
                 onChange={(e) => {
                   setMessage(e.target.value);
                 }}
-                rows={3}
+                rows={5}
                 id="message"
                 value={message}
                 className="bg-slate-100 p-3 border-[5px] pt-1 outline-none  border-red-300 rounded-md"
@@ -170,7 +171,7 @@ const Home = () => {
                   onClick={() => {
                     handleDownload(divRef2);
                   }}
-                  className="w-full rounded-md mt-5 text-white  bg-red-600 text-xl  py-4 max-w-[350px]"
+                  className="w-full rounded-md mt-5 text-white  grbg text-xl  py-4 max-w-[350px]"
                 >
                   ডাউনলোড করুন
                 </button>

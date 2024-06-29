@@ -16,3 +16,12 @@
   font-weight: normal;
   font-style: normal;
 }
+
+.grbg {
+  background: rgb(145, 19, 14);
+  background: radial-gradient(
+    circle,
+    rgba(145, 19, 14, 1) 16%,
+    rgba(73, 7, 2, 1) 100%
+  );
+}
